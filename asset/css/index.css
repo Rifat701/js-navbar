@@ -4,6 +4,11 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
@@ -25,14 +30,14 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
-    margin: 0 70px 0 0;
+    gap: 65px;
+    margin: 0 100px 0 0;
     
 }
 .itames li{
     list-style: none;
     font-size: 18px;
-    transition: .4s;
+
 }
 .icon{
     display: none;
@@ -47,7 +52,19 @@ h2{
 
 @media screen and (max-width:800px){
     .itames{
-        display: none;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background: #000;
+            width: 100%;
+            height: 100%;
+            top: 70px;
+            text-align: center;
+            padding: 0px;
+            left: 100%;
+            flex-direction: column;
+            transition: .5s;
     }
     .icon{
         display: block;
@@ -56,16 +73,8 @@ h2{
         cursor: pointer;
     }
     .showData{
-            display: block;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            background: #000;
-            width: 100%;
-            top: 70px;
-            text-align: center;
-            padding: 0px;
             left: 0;
+            gap: 16px;
     }
     .itames li{
         padding: 10px 0;
