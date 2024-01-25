@@ -32,12 +32,20 @@ h2{
     list-style: none;
     font-size: 18px;
 }
+.icon{
+    display: none;
+}
+.text{
+    padding: 0 30px;
+    text-align: center;
+}
 
 @media screen and (max-width:800px){
     .itames{
         display: none;
     }
     .icon{
+        display: block;
         font-size: 35px;
         margin: 0 22px 0 0;
         cursor: pointer;
