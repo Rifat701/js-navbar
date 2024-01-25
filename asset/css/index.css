@@ -27,10 +27,12 @@ h2{
     align-items: center;
     gap: 60px;
     margin: 0 70px 0 0;
+    
 }
 .itames li{
     list-style: none;
     font-size: 18px;
+    transition: .4s;
 }
 .icon{
     display: none;
@@ -38,6 +40,9 @@ h2{
 .text{
     padding: 0 30px;
     text-align: center;
+}
+.showData{
+    left: 100%;
 }
 
 @media screen and (max-width:800px){
@@ -59,8 +64,8 @@ h2{
             width: 100%;
             top: 70px;
             text-align: center;
-            /* gap: 20px; */
             padding: 0px;
+            left: 0;
     }
     .itames li{
         padding: 10px 0;

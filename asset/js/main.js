@@ -10,3 +10,5 @@ pressIcon.addEventListener("click", function(){
         document.getElementById("bar").className = "bi bi-list"
     }
 })
+
+
